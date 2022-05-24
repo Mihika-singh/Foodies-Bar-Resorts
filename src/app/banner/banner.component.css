@@ -1,0 +1,19 @@
+.main-head{
+
+    font-family:Georgia, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center; 
+    font-weight: bold;
+    line-height: 3;
+     font-size: 2.1rem;
+   
+    }
+    .btnn1{
+     
+    margin: 50px;
+    
+    
+    }
+    
+    .banner{
+        background-color:rgb(96, 92, 92)
+    }

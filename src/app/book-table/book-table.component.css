@@ -1,0 +1,14 @@
+.imgCover2{
+    width: 400px;
+    height: 200px;
+    background-size: cover;
+     cursor: pointer;
+   
+}
+ .imgtext{
+     cursor: pointer;
+ }
+ h1{
+     line-height: 3;
+ }
+  

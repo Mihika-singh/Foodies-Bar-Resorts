@@ -1,0 +1,12 @@
+.imgCover{
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    
+}
+.image { 
+    position: relative; 
+    width: 100%; /* for IE 6 */
+ }
+ 
+ 

@@ -1,0 +1,52 @@
+ 
+<h3 class="text-danger">Hunger is a good cook </h3>
+<br>
+<br>
+<div style="display:flex;justify-content: space-evenly;flex-wrap: wrap;">  
+ 
+    <div *ngFor="let food1 of foods1 " class="card bg-light text-light" style="width:10rem;">
+       
+        <div class="card-body">        
+          <img class="imgCover" [src]="food1.imageUrl" alt=""> 
+        <br>   <br>
+       <a [routerLink]="['/foods1', food1.id]"> <button class="btn btn-danger btn-sm"  >{{food1.title}} </button></a>
+      
+    </div>
+    
+      <!-- </a> -->
+    </div>
+    <div *ngFor="let food2 of foods2 " class="card bg-light text-light" style="width:10rem;">
+        <a [routerLink]="['/foods2', food2.id]">
+        <div class="card-body">        
+          <img class="imgCover" [src]="food2.imageUrl" alt=""> 
+        <br>   <br>
+       <a [routerLink]="['/foods2', food2.id]"> <button class="btn btn-danger btn-sm"  >{{food2.title}} </button></a>
+      
+    </div>
+    </a>
+      <!-- </a> -->
+    </div>
+    <div *ngFor="let food3 of foods3 " class="card bg-light text-light" style="width:10rem;">
+        <a [routerLink]="['/foods3', food3.id]">
+        <div class="card-body">        
+          <img class="imgCover" [src]="food3.imageUrl" alt=""> 
+        <br>   <br>
+       <a [routerLink]="['/foods3', food3.id]"> <button class="btn btn-danger btn-sm"  >{{food3.title}} </button></a>
+      
+    </div>
+    </a>
+      <!-- </a> -->
+    </div>
+    <div *ngFor="let food4 of foods4 " class="card bg-light text-light" style="width:10rem;">
+        <a [routerLink]="['/foods4', food4.id]">
+        <div class="card-body">        
+          <img class="imgCover" [src]="food4.imageUrl" alt=""> 
+        <br>   <br>
+       <a [routerLink]="['/foods4', food4.id]"> <button class="btn btn-danger btn-sm"  >{{food4.title}} </button></a>
+      
+    </div>
+    </a>
+      <!-- </a> -->
+    </div>
+</div>
+ 

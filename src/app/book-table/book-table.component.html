@@ -1,0 +1,17 @@
+ 
+<h1>Room Booking</h1>
+<div style="display:flex;justify-content:center;flex-wrap: wrap; ">  
+    <div *ngFor="let table of Tables" class="card" style="margin-left: 30px;" >
+            
+     <img class="imgCover2" [src]="table.imageUrl" >  <div class="imgtext">  <h4 class="text-dark"> Book &#10145;</h4>   
+        <p>{{table.price}}</p>
+        
+    </div>
+        <br> 
+        
+      
+    
+    </div>
+    
+    
+    </div> 

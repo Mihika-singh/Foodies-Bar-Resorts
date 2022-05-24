@@ -1,0 +1,15 @@
+  .row{
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+  .main-head1{
+    line-height: 3;  
+    text-align: start;
+    margin-left:100px;
+  }
+  .main-head{
+    text-align: start;
+    margin-left:100px;
+    padding-bottom: 30px;
+  }

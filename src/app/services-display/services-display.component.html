@@ -1,23 +1,20 @@
- 
 <h3 class="text-danger service">Our Services</h3>
-<h6 class="text-danger service" >Explore  curated lists of top rooms,book tables, by being at your place, based on trends and book.</h6>
+<h6 class="text-danger service">Explore curated lists of top rooms,book tables, by being at your place, based on trends
+  and book.</h6>
 <br><br>
-<div style="display:flex;justify-content:center;flex-wrap: wrap; ">  
-<div *ngFor="let service1 of services1" class="card" style="margin-left: 30px;" >
-        
- <img class="imgCover2" [src]="service1.imageUrl" >  <div class="imgtext"><a [routerLink]="['/services1',service1.id]"> <h4 class="text-dark"> {{service1.title}} &#10145;</h4>  </a>
-      </div>
-    <br> 
-    
-  
+<div style="display:flex;justify-content:center;flex-wrap: wrap; ">
+  <div *ngFor="let service of services" class="card" style="margin-left: 30px;">
+
+    <img class="imgCover2" [src]="service.imageUrl">
+    <div class="imgtext"><a [routerLink]="[service.route,service.id]">
+        <h4 class="text-dark"> {{service.title}} &#10145;</h4>
+      </a>
+    </div>
+    <br>
+
+
+
+  </div>
+
 
 </div>
-
-<div *ngFor="let service2 of services2" class="card" style="margin-left: 30px;" >        
-      <img class="imgCover2" [src]="service2.imageUrl"><div class="imgtext2"> <a [routerLink]="['/services2',service2.id]"> <h4 class="text-dark" > {{service2.title}}  &#10145; </h4> </a>
-        </div>
-
-       
-    
-  </div>
-</div> 

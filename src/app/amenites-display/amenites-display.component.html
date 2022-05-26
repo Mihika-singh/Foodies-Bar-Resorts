@@ -1,16 +1,29 @@
-<h4>Explore the amenities we provide
-</h4> 
-<div class="jumbotron d-flex  m-5 mb-9" style="text-align: left;" >
- 
- 
-   
-   
-    <!--Exercise:
-      Make this a component
-      send in the data for # of movies rented, and list of titles
-      BONUS: hook up the rent buttons below
-     -->
-    <div class="card-body">
- <p>  Mocktails and cocktails only at special order at room.</p> 
+<div class="container-fluid">
+
+
+
+  <h4>Explore the amenities we provide
+
+  </h4>
+  <div class="card"
+    style="  margin-left: 70px ;margin-right: 70px;margin-bottom: 30px;text-align: left;   padding: 20px;"
+    *ngFor="let amenity of amenities">
+
+    <p>
+
+      {{amenity.title}}
+      <span>
+        <img *ngIf="amenity.id!==openAmenityID" (click)="openAmenityID=amenity.id" class="img-size"
+          src="https://img.icons8.com/external-phatplus-lineal-phatplus/344/external-down-arrow-essential-phatplus-lineal-phatplus.png"
+          alt="">
+
+        <img *ngIf="amenity.id===openAmenityID" (click)="openAmenityID=null" class="img-size"
+          src="https://img.icons8.com/ios/344/circled-chevron-up.png" alt="">
+      </span>
+    </p>
+    <br>
+
+    <p *ngIf="openAmenityID===amenity.id"> {{amenity.type}}</p>
+
   </div>
-  </div>
+</div>

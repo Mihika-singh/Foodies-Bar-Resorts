@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {BookTableService} from './book-table.service'
+import { BookTableService } from './book-table.service'
+import { Router, ActivatedRoute } from '@angular/router'
+import { ServiceDisplayService } from '../services-display/service-display.service'
 @Component({
   selector: 'app-book-table',
   templateUrl: './book-table.component.html',
@@ -7,11 +9,18 @@ import {BookTableService} from './book-table.service'
 })
 export class BookTableComponent implements OnInit {
 
-  constructor(private bookTable:BookTableService) { }
-Tables:any;
+  constructor(private bookTable: BookTableService, private route: ActivatedRoute, private serviceDisplay: ServiceDisplayService) { }
+  Tables: any;
+  service: any;
   ngOnInit(): void {
+
+this.route.paramMap
+    
+
     this.bookTable.getTables()
-    .subscribe(Tables=>this.Tables=Tables)
+      .subscribe((table: any) => this.Tables = table)
   }
+
+
 
 }

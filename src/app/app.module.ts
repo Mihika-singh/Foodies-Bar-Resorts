@@ -19,6 +19,7 @@ import { Food4Component } from './food4/food4.component';
 import { BookRoomComponent } from './book-room/book-room.component';
 import { BookTableComponent } from './book-table/book-table.component';
 import { TotalItemsComponent } from './total-items/total-items.component';
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import { TotalItemsComponent } from './total-items/total-items.component';
     Food4Component,
     BookRoomComponent,
     BookTableComponent,
-    TotalItemsComponent
+    TotalItemsComponent,
+    
   ],
   imports: [
     BrowserModule,

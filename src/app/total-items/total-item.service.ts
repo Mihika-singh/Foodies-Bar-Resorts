@@ -6,18 +6,18 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class TotalItemService {
-totalItem:any[]=[];
+  totalItem: any[] = [];
   constructor() { }
   getTotal() {
     return of({
-      count:0,
+      count: 0,
       titles: "",
-      price:0
+      price: 0
     })
 
   }
-  addtoCart(item:any){ 
-this.totalItem.push(item);
+  addtoCart(item: any) {
+    this.totalItem.push(item);
   }
-  
+
 }

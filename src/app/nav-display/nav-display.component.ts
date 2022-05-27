@@ -13,8 +13,8 @@ close=true;
   ngOnInit(): void {
   }
   onClick(){
-this.open=true;
-this.close=false;
+this.open=!this.open;
+ this.close=!this.close;
   }
 
 }

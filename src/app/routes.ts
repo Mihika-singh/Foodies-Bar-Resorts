@@ -1,6 +1,7 @@
 
 
 import { BookRoomComponent } from './book-room/book-room.component';
+import { BookServiceComponent } from './book-service/book-service.component';
 import { BookTableComponent } from './book-table/book-table.component';
 import { FoodDisplayComponent } from './food-display/food-display.component';
 
@@ -25,9 +26,9 @@ export const routingTable = [
    { path: 'pizza/:id', component: Food3Component },
    { path: 'chinese/:id', component: Food4Component },
    { path: 'services', component: ServicesDisplayComponent },
-   { path: 'rooms/:id', component: BookRoomComponent },
-   { path: 'tables/:id', component: BookTableComponent },
+   
 
-
+   { path: 'rooms/:id', component: BookServiceComponent  },
+   { path: 'tables/:id', component: BookServiceComponent  },
 
 ]; 

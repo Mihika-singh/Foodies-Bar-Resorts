@@ -19,6 +19,7 @@ import { Food4Component } from './food4/food4.component';
 import { BookRoomComponent } from './book-room/book-room.component';
 import { BookTableComponent } from './book-table/book-table.component';
 import { TotalItemsComponent } from './total-items/total-items.component';
+import { BookServiceComponent } from './book-service/book-service.component';
  
 @NgModule({
   declarations: [
@@ -38,11 +39,13 @@ import { TotalItemsComponent } from './total-items/total-items.component';
     BookRoomComponent,
     BookTableComponent,
     TotalItemsComponent,
+    BookServiceComponent,
     
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+     
     RouterModule.forRoot(routingTable)
   ],
   providers: [],

@@ -1,0 +1,12 @@
+.flex {
+    background-color: rgb(91, 5, 5);
+    display: flex;
+    color: white;
+    padding: 10px;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+a{
+    text-decoration: none;
+}

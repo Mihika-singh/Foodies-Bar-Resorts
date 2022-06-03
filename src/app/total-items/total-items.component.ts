@@ -12,4 +12,7 @@ export class TotalItemsComponent implements OnInit {
   totalItems!: { count: number;dishes:string;prices:number };
   ngOnInit(): void {
   }
+  onClick(){
+    alert('Are you sure you wants to go to cart ?')
+  }
 }

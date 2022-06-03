@@ -1,0 +1,36 @@
+#intro {
+   
+    height: 100vh;
+ 
+ background-color: rgb(18, 18, 18);
+}
+
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+    #intro {
+        margin-top: -58.59px;
+    }
+}
+
+.navbar .nav-link {
+    color: #fff !important;
+}
+
+.con {
+  
+    display: flex;
+    flex-direction: column;
+  
+ margin: 100px;
+ background-color: rgb(54, 53, 53);
+}
+.form-label{
+    font-size: 1rem;
+}
+h5{
+    color:rgb(245, 248, 247);
+    text-align: left;
+}
+h1{
+    color: white;
+}

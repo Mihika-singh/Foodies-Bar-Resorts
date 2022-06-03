@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { map } from 'rxjs';
+ 
 import { BookServiceService } from './book-service.service';
 
 @Component({
@@ -20,9 +20,7 @@ bookService: any;
         this.bookServices.getServiceType(qps.get('serviceRoute'))
         .subscribe(services  => {
           this.bookService = services;
-            
-
-        })
+      })
     } 
       else{
         this.bookServices.getBookServices()
@@ -32,8 +30,4 @@ bookService: any;
       }
     })
   }
-  
-  
-
- 
 }

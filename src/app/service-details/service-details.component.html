@@ -1,0 +1,15 @@
+ <br><br><br>
+ <div  class="con">
+ <h1>Booking Details</h1><hr>
+<h4 *ngIf="finalbook" align="left">Your Booking has been completed make your payment while checkin!!!!</h4>
+<h4 *ngIf="cancelbook" align="left">Your Booking has been cancelled</h4>
+<div class="container" >
+    
+    <h1 align="left" style="color: aliceblue;">{{book.Title}} room</h1><br>
+<h5 align="left" >  Ratings:  {{book.stars}}</h5>
+<h5 align="left">Amenities: {{book.amenities}}</h5>
+<h5 align="left">Price: {{book.price}}</h5>
+
+<button  (click)="finalBook()" class="btn btn-success btnn" >Final bookings and payment</button>
+<button   (click)="cancelBooking()" class="btn btn-danger btnn" >Cancel Bookings</button>
+<br><br></div></div>

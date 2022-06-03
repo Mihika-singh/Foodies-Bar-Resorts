@@ -1,0 +1,79 @@
+
+<div style="background-color: rgb(237, 246, 252);">
+<br><h1 class="flex">The Foodies bar foods evaluation survey </h1>
+<br>
+<hr>
+
+<br>
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-xl-5">
+      
+      <form class="p-5 con" autocomplete="off" #loginForm="ngForm" (submit)="login(loginForm.value)">
+        <!-- Email input -->
+        <div class="form-outline">
+          <h4 *ngIf="onSubmit">Thanks for your feedback</h4>
+<h4 *ngIf="lessInfo">Make sure you have filled all details</h4>
+<h4 *ngIf="lessLen">Please fill correct format</h4>
+
+          <p align="left">Username:</p>
+          <input required minlength="3" #namemodel="ngModel" [(ngModel)]="model.username" name="username" type="name" id="username" class="form-control" placeholder="Username" />
+ 
+<p style="color: red;text-align: left;font-weight: 500;font-size: 0.9rem;" *ngIf="namemodel.invalid  && namemodel.touched"  >The name should of atleast three characters</p>
+        </div>
+        <br>
+        <!-- Password input -->
+
+
+
+        <!-- 2 column grid layout for inline styling -->
+
+        <div class="form-outline" style="  text-align: left;">
+
+          <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+        <br>
+        <p style="text-align:start;">Food taste:</p>
+        <div class="form-check  form-check-inline">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+          <label class="form-check-label" for="exampleRadios1">
+            Excellent taste
+          </label>
+        </div>
+        <div class="form-check  form-check-inline">
+          <label class="form-check-label" for="exampleRadios2">
+          Good taste
+          </label>
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+
+        </div>
+        <div class="form-check  form-check-inline">
+          <label class="form-check-label" for="exampleRadios3">
+           Average taste
+          </label>
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3"
+            >
+
+        </div>
+        <div class="form-check  form-check-inline">
+          <label class="form-check-label" for="exampleRadios3">
+           bad
+          </label>
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3"
+             >
+
+        </div>
+        <br><br>
+        <div class="form-outline">
+          <p align="left">Submit Review:</p>
+          <textarea required minlength="10" #textmodel="ngModel" [(ngModel)]="model.text" type="textarea" name="text" class="form-control" id="text"   placeholder="Text-area"></textarea>
+          <p align="left" style="color: red;font-weight: 500;font-size: 0.9rem;" *ngIf="textmodel.invalid  && textmodel.touched">Atleast 10 characters required</p>
+        </div>
+        
+        <!-- Submit button -->
+          <button style="margin-top: 15px;" type="submit" class="btn btn-dark btn-block">Submit Review
+            </button> 
+      </form>
+    </div>
+  </div><br><br><br><br>
+</div></div>

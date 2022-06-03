@@ -16,8 +16,6 @@ export class TotalItemService {
     })
 
   }
-  addtoCart(item: any) {
-    this.totalItem.push(item);
-  }
+  
 
 }

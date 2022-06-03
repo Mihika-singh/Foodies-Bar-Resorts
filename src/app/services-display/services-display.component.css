@@ -1,12 +1,23 @@
-.imgCover2{
-    width: 300px;
+.imgCover2 {
+    width: 400px;
     height: 300px;
     background-size: cover;
-     cursor: pointer;
-   
+    cursor: pointer;
+
 }
- .imgtext{
-     cursor: pointer;
- }
+
+.imgtext {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
  
-  
+h2,h4{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media screen {
+    
+}

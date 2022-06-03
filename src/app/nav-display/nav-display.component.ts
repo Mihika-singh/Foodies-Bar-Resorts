@@ -8,13 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class NavDisplayComponent implements OnInit {
 
   constructor() { }
-open=false;
-close=true;
+ 
   ngOnInit(): void {
   }
-  onClick(){
-this.open=!this.open;
- this.close=!this.close;
-  }
+  
 
 }

@@ -2,16 +2,16 @@
 
 
 
-  <h4>Explore the amenities we provide
+  <br><br><h4>Explore the amenities we provide
 
   </h4>
-  <div class="card"
+  <div class="card d-flex"
     style="  margin-left: 70px ;margin-right: 70px;margin-bottom: 30px;text-align: left;   padding: 20px;"
     *ngFor="let amenity of amenities">
-
+    <h5> {{amenity.title}}</h5>
     <p>
 
-      {{amenity.title}}
+    
       <span>
         <img *ngIf="amenity.id!==openAmenityID" (click)="openAmenityID=amenity.id" class="img-size"
           src="https://img.icons8.com/external-phatplus-lineal-phatplus/344/external-down-arrow-essential-phatplus-lineal-phatplus.png"

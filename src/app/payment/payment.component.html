@@ -1,0 +1,26 @@
+<br><br><br>
+<div class="row" style="display: flex;justify-content: space-evenly;flex-wrap: wrap;">
+    <h1>My Cart ({{totalQuantity.count}})</h1>
+    <br><br><br><br>
+    <div class="col-lg-4 card" style="text-align: left; padding: 30px;">
+        <h4>Your Order:</h4><h5 style="color: green;"> {{totalQuantity.dishes}} </h5>
+        <hr><br>
+        <h5>Total price: {{totalQuantity.count}} item * {{totalQuantity.prices}} = $ {{totalQuantity.prices}}</h5>
+       <br><hr> <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Always send cutlery to this address</label>
+          </div>
+    </div>
+
+    <div class="col-lg-4 card" style="text-align: left; padding: 30px;">
+        <h5 style="text-decoration: underline;">Subtotal:</h5> <h5>$ {{totalQuantity.prices}}</h5>
+        <hr>
+        <h6>Free shipping</h6>
+        <hr>
+        <h4 style="text-decoration: underline;">Total</h4>
+        <h4>$ {{totalQuantity.prices}}</h4><br><br>
+
+        <button class="btn btn-dark btn-sm" style="padding: 10px;" (click)="cart(food)">Checkout</button>
+    </div>
+
+</div><br><br>

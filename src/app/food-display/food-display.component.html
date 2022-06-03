@@ -1,19 +1,20 @@
-<h3 class="text-danger">Hunger is a good cook </h3>
+<div style="background-color: rgb(235, 239, 239);">
+<br><h3 class="text-dark">Hunger is a good cook </h3>
 <br>
 <br>
 <div style="display:flex;justify-content: space-evenly;flex-wrap: wrap;">
 
-  <div *ngFor="let food of foods " class="card bg-light text-light" style="width:10rem;">
+  <div *ngFor="let food of foods " class="card bg-light text-light" style="width:15.5rem;" id="zoom-in">
 
-    <div class="card-body">
-      <img class="imgCover" [src]="food.imageUrl" alt="">
+    <div class="card-body"  >
+      <img class="imgCover" [src]="food.imageUrl" alt="" >
       <br> <br>
-      <a [routerLink]="[food.route, food.id]"> <button class="btn btn-danger btn-sm"> {{food.title}} </button> </a>
+      <a [routerLink]="[food.route, food.id]" [queryParams]={foodRoute:food.route}> <button class="btn btn-dark btn-md"> {{food.title}} </button> </a>
 
     </div>
 
 
   </div>
-
+</div>
 
 </div>

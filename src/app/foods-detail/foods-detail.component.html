@@ -1,0 +1,16 @@
+<br>
+<div class="container bg-light">
+  <div *ngFor="let food of foods" class="row">
+    <div class="col-lg-6">
+      <h6>{{food.dish}}</h6>
+      <p>$ {{food.price}}</p>
+      <br>
+    </div>
+    <div class="col-lg-6">
+      <button class="btn btn-sm btn-danger" (click)="onAdd(food)" style="margin-left: 1;">Add +</button>
+      <button class="btn btn-sm btn-light border-danger" *ngIf="priceZero" (click)="onRemove( food)"> -</button>
+    </div>
+  </div>
+</div>
+<br><br>
+<app-total-items *ngIf="itemPlus" [totalItems]="totalItems"></app-total-items><br><br>

@@ -1,0 +1,19 @@
+ 
+.con {
+    background-color: rgb(231, 229, 229);
+
+}
+.form-control{
+    margin-left: 10px;
+     
+}
+ 
+.ng-touched{
+    border:5px solid rgb(7, 7, 40);
+}
+.ng-invalid{
+    border: red;
+}
+.ng-valid{
+    border: green;
+}

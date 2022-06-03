@@ -1,6 +1,9 @@
-<div class="card p-2 col-6">   
-<div class="card-body">
-  <h1>Total items</h1>
-<p>Items quantity: {{ totalItems.count }}  price: {{totalItems.prices}}</p>
-  </div>
+<div class="flex bg-danger text-light">
+
+  <p> {{ totalItems.count }} <SPAn style="font-family:Verdana, Geneva, Tahoma, sans-serif;">ITEM</SPAn> <br>
+    ₹{{totalItems.prices}} <span
+      style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">plus taxes</span> </p>
+  <a routerLink="/payments">
+    <p style="color: aliceblue;" (click)="onClick()">Go To Cart →</p>
+  </a>
 </div>

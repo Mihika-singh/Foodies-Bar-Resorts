@@ -27,7 +27,7 @@ export class BookServiceService {
       )
 
   }
-  
+
 
   getBookServices() {
     return of([{
@@ -38,7 +38,7 @@ export class BookServiceService {
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCk1cOdj9z63vehX0SdAFtPmEXUbK6Ue8-xQ&usqp=CAU",
       "amenities": "TV , AC , Geyser, First-Aid",
       "route": 'rooms',
-      "serviceType": "roomType",
+"serviceType":"roomsType"
     },
     {
       "id": 1,
@@ -48,7 +48,7 @@ export class BookServiceService {
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7HBZEHxTr09wT5FN7jhVzcHlotWgIraoDGg&usqp=CAU",
       "amenities": "TV , AC , Geyser, First-Aid , Wifi",
       "route": 'rooms',
-      "serviceType": "roomType",
+      "serviceType":"roomsType"
     },
     {
       "id": 2,
@@ -58,7 +58,7 @@ export class BookServiceService {
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSdjJQo5Rmncf4bUyYV-Ma-cLeJIW68pSPUA&usqp=CAU",
       "amenities": "TV , Geyser, First-Aid",
       "route": 'rooms',
-      "serviceType": "roomType",
+      "serviceType":"roomsType"
     },
     {
       "id": 3,
@@ -68,25 +68,27 @@ export class BookServiceService {
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSepwmVa12snYnmMpGH6_5kTZ2pa80lHPSOAA&usqp=CAU",
       "amenities": "TV , AC , First-Aid",
       "route": 'rooms',
-      "serviceType": "roomType",
+      "serviceType":"roomsType"
     },
     {
-      "id": 4,
+      "id": 4 ,
       "Title": "Roof top",
-
+stars:4.1,
+amenities:"Cocktails,Moctails,Live Concerts",
       "price": 500,
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNPa_hPdCKj9-2qkadR9uEwVCC4e2Vu2ad3g&usqp=CAU",
       "route": 'tables',
-      "serviceType": "tableType",
+      "serviceType":"tablesType"
     },
     {
       "id": 5,
       "Title": "Full family full big Sofa",
-
+stars:4.0,
+amenities:"Cocktails,Live Performances",
       "price": 700,
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNmcqmZRVVFJlHM7HMHg1zn6n_nCoUEE7oCA&usqp=CAU",
       "route": 'tables',
-      "serviceType": "tableType",
+      "serviceType":"tablesType"
     },
     ])
   }
